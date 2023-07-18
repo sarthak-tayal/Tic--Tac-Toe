@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --winning-blocks: hsl(146, 87%, 46%);
+}
+
+.body {
+    background-color :rgb(251, 255, 0);
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    color: yellow;
+    font-family:"Times New Roman", cursive;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(157, 8, 194);
+    font-family:"Comic Sans MS", cursive;
+}
+
+.turn-container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f0603;
+}
+
+#grid {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(127, 225, 255);
+    font-size: 80px;
+    font-family: Palatino, serif;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(20, 172, 61);
+    color: #0b0505;
+    border-color: rgb(20, 172, 61);
+    font-size: 20px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: rgb(20, 172, 61);
+    background-color: black;
+}
